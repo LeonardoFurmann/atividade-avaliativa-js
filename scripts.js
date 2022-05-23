@@ -121,11 +121,13 @@ function atv_08(){
 function atv_09(){
     var num = Number(window.prompt("Digite um número: "));
     var i = 1;
+
+    document.getElementById("resultado").innerHTML = "";
     
    do{
         result = num * i; 
-        document.getElementById("resultado").innerHTML = num + "x" + i + " = " + result;
+        document.getElementById("resultado").innerHTML += num + "x" + i + " = " + result + "<br>";
         i++;
 
-    }while(i <= 20);
+    }while(i <= 10);
 }
