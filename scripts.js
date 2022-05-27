@@ -131,3 +131,16 @@ function atv_09(){
 
     }while(i <= 10);
 }
+
+function atv_10(){
+    var num = Number(window.prompt("Digite um número: "));
+    
+    result = 1;
+
+    for(i = num; i > 0 ; i--){
+         result = result * i;
+    }
+
+    document.getElementById("resultado").innerHTML = `Fatorial de ${num} é ${result}`;
+
+}
